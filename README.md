@@ -1,4 +1,4 @@
-# codeTogether
+# codeAlong
 It is a live code sharing platform built using Node.js, Express, React, and Socket.io. Users can join different rooms and code together with their partners and compile their code in C++/Python/Java
 
 ![image](https://user-images.githubusercontent.com/63255932/122105735-bed33280-ce36-11eb-8abc-0b90c2565b4a.png)
