@@ -1,3 +1,0 @@
-const clientId="4757058365facdf15434cef60c238e2e"
-const clientSecret="a030c16399c3647bcf1ef7fb39a47db80c96eb3fad77d67ec38a15395aef9e6c"
-module.exports={clientId,clientSecret}

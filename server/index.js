@@ -21,18 +21,22 @@ io.on('connection',(socket)=>{
   socket.on('join',({name,room},callback)=>{
     console.log(name)
    const {error,user}=addUser({id:socket.id,name,room})  
+   console.log("hiei",user)
    if(error) return callback(error)
    socket.join(user.room)
    callback()
     
-})
-  socket.on('send-code',(code)=>{
-    const user = getUser(socket.id);
-    
-    socket.broadcast.emit('recieve-code',code)
+ })
+  socket.on('send-code',async(data)=>{
+    const user = await getUser(socket.id);
+    console.log("from sendcode",user)
+    io.to(user.room).emit('recieve-code',data)
 
   })
-
+  socket.on('disconnect',()=>{
+    const user=removeUser(socket.id)
+   
+})
 
 
 

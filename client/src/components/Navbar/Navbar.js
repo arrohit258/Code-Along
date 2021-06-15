@@ -2,7 +2,6 @@ import React from 'react'
 import { Menu,Dropdown,Icon } from 'semantic-ui-react'
 import "semantic-ui-css/semantic.min.css";
 import './Navbar.css'
-import {clientId, clientSecret} from '../Keys/Keys'
 import axios from 'axios'
 
 const  Navbar=({language,setLanguage,code,setOutput,output,input})=> {
@@ -29,7 +28,6 @@ const  Navbar=({language,setLanguage,code,setOutput,output,input})=> {
     
     
     
-    //.then(data=>console.log(data))
     
   
 
