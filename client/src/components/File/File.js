@@ -12,6 +12,7 @@ import "semantic-ui-css/semantic.min.css"
 import './File.css'
 const SAVE_INTERVAL_MS=2000
 const ENDPOINT='http://localhost:5000/'
+//for running in deployed mode the backend api is hosted at https://codelongserver.herokuapp.com
 
 
 let socket
