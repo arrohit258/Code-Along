@@ -15,7 +15,7 @@ router.post("/getOutput",(req,res)=>{
     }
 
 
-axios.post('https://codexweb.netlify.app/.netlify/functions/enforceCode',data)
+axios.post('https://codex-api.herokuapp.com/',data)
 .then(function (response) {
     
   const output=response.data.output
@@ -30,3 +30,5 @@ axios.post('https://codexweb.netlify.app/.netlify/functions/enforceCode',data)
 })
 
 module.exports=router
+//https://codex-api.herokuapp.com/
+//axios.post('https://codexweb.netlify.app/.netlify/functions/enforceCode',data)
